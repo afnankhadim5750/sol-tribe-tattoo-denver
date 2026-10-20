@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Booking — Sol Tribe Tattoo &amp; Body Piercing, Denver CO</title>
+<meta name="description" content="Book a tattoo consultation or piercing at Sol Tribe, 56 Broadway Denver CO. Open daily 12 PM – 9 PM. Call 303-832-1311 or send a booking enquiry.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+.page-hero{padding:96px 0 64px}
+.page-hero h1{font-size:clamp(3.5rem,10vw,8rem)}
+.page-hero h1 .red{color:var(--red)}
+.page-hero p{color:var(--bone-dim);max-width:620px;margin-top:18px}
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;margin-bottom:80px}
+.c-cards{display:grid;gap:18px}
+.c-card{display:flex;gap:18px;align-items:flex-start;background:var(--ink2);border:1px solid var(--line);padding:26px}
+.c-card i{font-size:1.6rem;color:var(--red);margin-top:2px}
+.c-card h3{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--bone-dim);margin-bottom:6px}
+.c-card p{font-weight:600;font-size:1.05rem}
+.c-card a:hover{color:var(--red)}
+.map-dummy{margin-top:18px;background:var(--ink2);border:1px solid var(--line);min-height:220px;display:flex;
+  flex-direction:column;justify-content:center;align-items:center;gap:10px;color:var(--bone-dim);text-align:center;padding:24px}
+.map-dummy i{font-size:2.4rem;color:var(--red)}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="badge">Design concept</div>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">Sol<span class="slash">/</span>Tribe</a>
+    <nav class="mainnav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a class="btn" href="contact.html">Book Now</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav"><i class="bi bi-list"></i></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="kicker">Get inked / Get pierced</span>
+    <h1>Book<span class="red">/</span>Now</h1>
+    <p>Walk in any day 12 PM – 9 PM, or send a booking enquiry and we'll confirm your slot. Consultations are always free.</p>
+  </div>
+</section>
+
+<hr class="slash-rule">
+
+<section class="sec">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="c-cards">
+          <div class="c-card">
+            <i class="bi bi-geo-alt"></i>
+            <div><h3>Studio</h3><p>56 Broadway<br>Denver, CO 80203, US</p></div>
+          </div>
+          <div class="c-card">
+            <i class="bi bi-telephone"></i>
+            <div><h3>Phone</h3><p><a href="tel:+13038321311">303-832-1311</a></p></div>
+          </div>
+          <div class="c-card">
+            <i class="bi bi-envelope"></i>
+            <div><h3>Email</h3><p><a href="mailto:SolTribe@gmail.com">SolTribe@gmail.com</a></p></div>
+          </div>
+          <div class="c-card">
+            <i class="bi bi-clock"></i>
+            <div><h3>Hours</h3><p>Mon – Sun<br>12:00 PM – 9:00 PM</p></div>
+          </div>
+          <div class="c-card">
+            <i class="bi bi-star"></i>
+            <div><h3>Reputation</h3><p>4.6/5 from 491 Google reviews<br><span style="font-weight:400;color:var(--bone-dim);font-size:.9rem">Operating since 2009</span></p></div>
+          </div>
+        </div>
+        <div class="map-dummy">
+          <i class="bi bi-geo-alt-fill"></i>
+          <p><strong>56 Broadway, Denver, CO 80203</strong><br>On Broadway, walk-ins welcome daily.</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <form class="book-form" action="#" method="post" onsubmit="return false;">
+          <h2 style="font-size:2rem">Booking <span style="color:var(--red)">Enquiry</span></h2>
+          <p class="note">This is a concept demo — the form doesn't send. Call or email us to book for real.</p>
+          <div class="form-row">
+            <div class="field"><label for="name">Your name</label><input id="name" type="text" placeholder="Jane Doe"></div>
+            <div class="field"><label for="phone">Phone</label><input id="phone" type="tel" placeholder="(303) 555-0100"></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="service">Service</label>
+              <select id="service">
+                <option>Custom tattoo</option>
+                <option>Flash tattoo</option>
+                <option>Cover-up</option>
+                <option>Body piercing</option>
+                <option>Jewelry change</option>
+                <option>Free consultation</option>
+              </select>
+            </div>
+            <div class="field"><label for="date">Preferred date</label><input id="date" type="date"></div>
+          </div>
+          <div class="field"><label for="idea">Your idea</label><textarea id="idea" rows="5" placeholder="Tell us about the design, placement and size you have in mind…"></textarea></div>
+          <button class="btn" type="submit">Request Booking</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="aftercare reveal">
+      <h2>First visit? <span style="color:var(--red)">Good to know</span></h2>
+      <p>Bring a valid photo ID (18+ for tattoos; minors need a parent present for piercings per Colorado law). Eat beforehand, skip the alcohol, and arrive 10 minutes early for paperwork.</p>
+      <div class="ac-grid">
+        <div class="ac-item"><span class="n"><i class="bi bi-person-badge"></i></span><h3>ID required</h3><p>Valid photo ID for every tattoo and piercing appointment.</p></div>
+        <div class="ac-item"><span class="n"><i class="bi bi-emoji-smile"></i></span><h3>Come fed &amp; rested</h3><p>A meal and a good night's sleep make sessions far more comfortable.</p></div>
+        <div class="ac-item"><span class="n"><i class="bi bi-cup-straw"></i></span><h3>Skip the booze</h3><p>No alcohol or blood thinners for 24 hours before your session.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-logo">Sol<span class="slash">/</span>Tribe</p>
+        <p style="margin-top:12px">Custom tattoos &amp; professional body piercing on Broadway since 2009.</p>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <p>56 Broadway<br>Denver, CO 80203<br><a href="tel:+13038321311">303-832-1311</a><br><a href="mailto:SolTribe@gmail.com">SolTribe@gmail.com</a></p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <p>Mon – Sun<br>12:00 PM – 9:00 PM<br>Walk-ins welcome</p>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 Sol Tribe Tattoo &amp; Body Piercing. All rights reserved.</span>
+      <span>Design concept — not affiliated with any live site.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="menu.js"></script>
+</body>
+</html>
